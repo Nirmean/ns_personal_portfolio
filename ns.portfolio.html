@@ -13,10 +13,10 @@
     <h2>Nirmeans Logo</h2>
     <nav id="header-nav">
         <ul id="nav-list">
-            <li><ahref="#home">home</a></li>
-            <li><ahref="#about-me">about me</a></li>
-            <li><ahref="#my-portfolio">my portfolio</a></li>
-            <li><ahref="#get-in-touch">get in touch</a></li>
+            <li><a href="file:///Users/nirmean/bootcamp/personal_portfolio/ns.portfolio.html#">home</a></li>
+            <li><a href="#about-me">about me</a></li>
+            <li><a href="#my-portfolio">my portfolio</a></li>
+            <li><a href="#contact-me">get in touch</a></li>
         </ul>
       </nav>
  </header>
@@ -25,7 +25,7 @@
     <!--Welcome banner-->
     <section>
         <div class="welcome-banner">
-            <img class="my-image" src="" alt="">
+            <img class="my-image" src="../personal_portfolio/images/Screenshot 2023-11-07 at 13.16.25.png" alt="headshot image of Nirmean">
             <div class="welcome-text">
                 <h1>Hi, I'm Nirmean.</h1>
                 <p>I'm a front-end developer in training.</p>
@@ -34,7 +34,7 @@
     </section>
 
     <!--about me-->
-    <section>
+    <section id="about-me">
         <div class="about-me-container">
             <h2 class="headings">About Me</h2>
             <p class="descriptions">About me text here</p>
@@ -42,27 +42,32 @@
     </section>
 
     <!--my portfolio-->
-    <section>
+    <section id="my-portfolio">
         <div class="portfolio-container">
             <h2 class="headings">My Portfolio</h2>
             <div class="projects-container">
-                <a id="large-project" href="#">
-                    <img src="#" id="image-1">
+                <a id="large-project" href="https://www.google.com/">
+                    <img src="../personal_portfolio/images/icons8-project-80 (1).png" id="image-1" alt="lightbulb with cog icon">
                     <p class="descriptions">Project 1</p>
                 </a>
-                <a class="project-card" href="#" alt="">
-                    <img src="#" class="project-images">
+
+                <a class="project-card" href="https://www.google.com/">
+                    <img src="../personal_portfolio/images/icons8-project-80 (3).png" class="project-images" alt="notebook with ticks icon">
                     <p class="descriptions">Project 2</p>
                 </a>
-                <a class="project-card" href="#" alt="">
-                    <img src="#" class="project-images">
+
+                <a class="project-card" href="https://www.google.com/">
+                    <img src="../personal_portfolio/images/icons8-project-80 (2).png" class="project-images" alt="flipchart icon">
                     <p class="descriptions">Project 3</p>
                 </a>
-                <a class="project-card" href="#" alt="">
-                    <img src="#" class="project-images">
-                    <p class="descriptions">Project 4</p>
-                </a> <a class="project-card" href="#" alt="">
-                    <img src="#" class="project-images">
+
+                <a class="project-card" href="https://www.google.com/">
+                    <img src="../personal_portfolio/images/icons8-project-80.png" class="project-images" alt="landscape document with arrow icon">
+                    <p class="descriptions">Project 4</p>   
+                </a> 
+
+                <a class="project-card" href="https://www.google.com/">
+                    <img src="../personal_portfolio/images/icons8-document-80-5.png" class="project-images" alt="document with lines icon">
                     <p class="descriptions">Project 5</p>
                 </a>
             </div>
@@ -70,13 +75,22 @@
     </section>
 
     <!--footer / contact-->
-    <footer>
+    <footer id="contact-me">
         <h2 class="title">Get in touch</h2>
         <nav class="footer-nav">
             <ul class="footer-list">
-                <li><a href="#git-hub">GitHub</a></li>
-                <li><a href="#LinkedIn">Linkedin</a></li>
-                <li>Email:nsawi@live.com</li>
+                <a class="contact-card" href="https://github.com/Nirmean/personal_portfolio.git">
+                    <img src="../personal_portfolio/images/icons8-github-48.png" id="git-hub" alt="github logo">
+                    <p class="c-descriptions">GitHub</p>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                    <img src="../personal_portfolio/images/icons8-linkedin-48.png" id="linkedin" alt="linkedin logo">
+                    <p class="c-descriptions">Linkedin</p>
+                </a>
+                <a class="contact-card" href="mailto:nsawi@live.com>Send me an email">
+                    <img src="../personal_portfolio/images/icons8-composing-mail-48.png" id="mail" alt="email envelope icon">
+                    <p class="c-descriptions">Email</p>
+                </a>
             </ul>
         </nav>
     </footer>
