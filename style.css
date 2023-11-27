@@ -98,23 +98,16 @@ h1 {
 }
 
 #my-portfolio {
-  display: flex;
-}
-
-.portfolio-container {
-  display: flex;
   background-color: var(--clr-darksage);
-  width: 100%;
+  display: flex;
 }
 
 #projects-container {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    height: auto;
-    justify-content: start;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #large-project {
