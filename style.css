@@ -2,15 +2,145 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr-darkestkhaki: #5c715e;
+  --clr-darksage: #b6cdbd;
+  --clr-lightsage: #ddeedf;
+  --clr-lightestsage: #f2f9f1; 
+
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  width: auto;
 }
 
-h1,
-h2,
+.headings {
+  margin-left: 5px;
+  color: var(--clr-darkestkhaki);
+  border-right: 3px dashed #364237;
+  width: 20%;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-darkestkhaki);
+  color: var(--clr-lightestsage)
+}
+
+#nav-list {
+  display: flex;
+  gap: 15px 15px;
+}
+
+li {
+list-style: none;
+color: var(--clr-lightestsage);
+}
+
+a {
+  color: var(--clr-lightestsage);
+}
+
+a:hover {
+  color: var(--clr-darksage);
+  background-color: #364237;
+}
+
+h1 {
+  color: var(--clr-darkestkhaki)
+}
+
+.welcome-banner{
+  display: flex;
+  top: 50px;
+  background-color: var(--clr-lightestsage);
+  width: 100%;
+  height: 35vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.my-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin: 50px;
+}
+
+.welcome-text {
+  width: 100%;
+}
+
+#about-me {
+  width: auto;
+}
+
+.about-me-container {
+  display: flex;
+  width: auto;
+  height: 200px;
+  top: 360px;
+  background-color: var(--clr-lightsage);
+}
+
+.description {
+  margin-top: 22px;
+  margin-left: 10px;
+  width: 80%;
+}
+
+.portfolio-container {
+  display: flex;
+  background-color: var(--clr-darksage);
+  width: 100%;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+#large-project {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+}
+
+.project-card {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  height: 100px;
+}
+
+.p-title {
+  color: var(--clr-darkestkhaki);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.project-images {
+  align-items: stretch;
+  justify-content: center;
+}
+
+#contact-me {
+  background-color: var(--clr-lightsage);
+  display: flex;
+}
+
 h3,
 h4,
 h5,
