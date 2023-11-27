@@ -17,12 +17,12 @@ body {
   width: auto;
 }
 
-.headings {
-  margin-left: 5px;
-  color: var(--clr-darkestkhaki);
-  border-right: 3px dashed #364237;
-  width: 20%;
+a:hover {
+  color: var(--clr-darksage);
+  background-color: #364237;
 }
+
+/* main logo & nav */ 
 
 header {
   display: flex;
@@ -49,14 +49,7 @@ a {
   color: var(--clr-lightestsage);
 }
 
-a:hover {
-  color: var(--clr-darksage);
-  background-color: #364237;
-}
-
-h1 {
-  color: var(--clr-darkestkhaki)
-}
+/* welcome-banner */
 
 .welcome-banner{
   display: flex;
@@ -66,6 +59,10 @@ h1 {
   height: 35vh;
   justify-content: flex-start;
   align-items: center;
+}
+
+h1 {
+  color: var(--clr-darkestkhaki)
 }
 
 .my-image {
@@ -79,6 +76,17 @@ h1 {
   width: 100%;
 }
 
+/* main section */
+
+/* H2 style */
+.headings {
+  margin-left: 5px;
+  color: var(--clr-darkestkhaki);
+  border-right: 3px dashed #364237;
+  width: 20%;
+}
+
+/* about me section */
 #about-me {
   width: auto;
 }
@@ -97,6 +105,7 @@ h1 {
   width: 80%;
 }
 
+/* portfolio section */
 #my-portfolio {
   background-color: var(--clr-darksage);
   display: flex;
@@ -150,6 +159,7 @@ h1 {
   width: 98%;
 }
 
+/* footer & contact me section */
 #contact-me {
   background-color: var(--clr-lightsage);
   display: flex;
