@@ -1,19 +1,20 @@
 # Nirmeans Personal Portfolio
-My (first) self coded personal portfolio website, built with html and css!
+Welcome to my (first) self coded personal portfolio website. I'm currently a front-end developer in training in the EdX Bootcamp.
 
-To view as a live example, click here:
+Here you'll find information about me, a showcase of my projects, and how to get in touch with me.
 
-![Alt text](<images/Screenshot 2023-11-28 at 13.09.57.png>)
+Live URL: file:///Users/nirmean/bootcamp/personal_portfolio/ns.portfolio.html
+
+![Snapshot image of the site](../personal_portfolio/images/Screenshot%202023-11-28%20at%2022.18.19.png)
 
 <h2>Sections</h2>
 
 - About me
 - My Portfolio
-- My CV
 - Contact Details and professional social media sites
 
 <h2>Features</h2>
-- 
+- Direct links to web
 
 <h2>Tools and Resources Used</h2>
 
