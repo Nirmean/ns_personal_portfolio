@@ -227,8 +227,11 @@ h1 {
 .contact-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  margin: 5px;
+  width: 100%;
 }
 
 .f-text {
@@ -238,7 +241,8 @@ h1 {
   border: 3px solid rgb(233, 197, 230);
   width: 150%;
   display: flex;
-  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 a {
@@ -268,11 +272,6 @@ a {
   .headings {
     font-size: larger;
     text-wrap: wrap;
-  }
-
-  #my-image {
-    height: 20vh;
-    width: 30vh;
   }
 
 }
