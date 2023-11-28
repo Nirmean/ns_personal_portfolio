@@ -33,7 +33,7 @@ h2 {
 
 header {
   display: flex;
-  position: fixed;
+  position: sticky;
   height: 50px;
   width: 100%;
   justify-content: space-between;
@@ -46,7 +46,10 @@ header {
   padding: 3px;
   padding-left: 16px;
   padding-right: 16px;
-  border: 3px solid rgb(233, 197, 230);
+  margin-left: 15px;
+  position: sticky;
+  height: auto;
+  background-color: rgb(233, 197, 230);
 }
 
 #nav-list {
@@ -67,14 +70,14 @@ a {
 
 .welcome-banner {
   display: flex;
-  top: 50px;
+  top: 10px;
   background-color: var(--clr-lightestsage);
   width: 100%;
   height: 35vh;
   justify-content: flex-start;
   align-items: center;
   position: static;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -95,17 +98,20 @@ h1 {
 
 /* main section */
 
-/* H2 style */
+/* H2 main headings style */
 .headings {
   direction: rtl;
   flex-wrap: wrap;
   color: var(--clr-darkestkhaki);
   border-right: 3px dashed #364237;
-  width: 20%;
+  flex-basis: 20%;
   font-size: 30px;
   align-items: stretch;
   height: auto;
   padding-right: 5px;
+  margin-top: -1px;
+  margin-bottom: -2px;
+  min-width: 6rem;
 }
 
 /* about me section */
@@ -119,6 +125,7 @@ h1 {
   height:100%;
   top: 360px;
   background-color: var(--clr-lightsage);
+  margin-bottom: 10px;
 }
 
 .a-me {
@@ -133,8 +140,7 @@ h1 {
 }
 
 .description {
-  margin-top: 22px;
-  margin-left: 10px;
+  margin: 10px;
   width: 80%;
 }
 
@@ -143,15 +149,16 @@ h1 {
   background-color: var(--clr-darksage);
   display: flex;
   padding: 0px;
-  border: 3px solid var(--clr-lightestsage);
+  margin-bottom: 10px;
 }
 
 #projects-container {
   display: flex;
-  width: 80%;
   justify-content: start;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-basis: 80%;
+  margin: 10px;
 }
 
 #large-project {
@@ -162,6 +169,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 5px var(--clr-darkestkhaki);
+  border: 3px solid var(--clr-lightestsage);
 }
 
 #img-1 {
@@ -177,7 +185,7 @@ h1 {
   align-items: center;
   width: 50%;
   height: 100px;
-  border-top: 3px solid var(--clr-lightestsage);
+  border: 3px solid var(--clr-lightestsage);
 }
 
 .project-images {
@@ -213,7 +221,6 @@ h1 {
 .footer-list {
   display: flex;
   margin: 40px;
-  gap: 30px;
   justify-content: space-evenly;
 }
 
@@ -238,84 +245,34 @@ a {
   text-decoration: none; 
 }
 
-
-@media screen and (max-width: 768px) {
-  body {
-    position: fixed;
-  }
-
+@media (max-width: 425px) {
   .headings {
-    word-wrap: break-word;
-    font-size: large;
-  }
-
-  #nav-list {
-    font-size: medium;
-    word-wrap: break-word;
-  }
-
-  p.description {
-    word-wrap: break-word;
-    margin-right: 3px;
-  }
-
-  .logo {
-    padding: 0%;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  body {
-    position: fixed;
-  }
-
-  .headings {
-    word-wrap: break-word;
-    font-size: medium;
-  }
-
-  #nav-list {
-    font-size: smaller;
-  }
-
-  .logo {
-    padding: 0%;
-    font-size: 1rem;
+    font-size: larger;
   }
 
   #my-image {
-    width: 100px;
-    height: 100px;
+    height: 20vh;
+    width: 30vh;
+  }
+
+  body {
+    width: fit-content;
+  }
+
+  a {
+    font-size: smaller;
   }
 }
 
-@media screen and (max-width: 425px) {
-  body {
-    position: fixed;
-  }
-
+@media (min-width: 425px) {
   .headings {
-    word-wrap: break-word;
-    font-size: medium;
-  }
-
-  #nav-list {
-    font-size: smaller;
-    word-wrap: break-word;
-  }
-
-  .logo {
-    padding: 0%;
-    font-size: 1rem;
+    font-size: larger;
+    text-wrap: wrap;
   }
 
   #my-image {
-    width: 100px;
-    height: 100px;
+    height: 20vh;
+    width: 30vh;
   }
 
-  p {
-   
-  }
 }
