@@ -7,19 +7,26 @@
   --clr-darksage: #b6cdbd;
   --clr-lightsage: #ddeedf;
   --clr-lightestsage: #f2f9f1; 
-
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  width: auto;
+  width: 100%;
 }
 
 a:hover {
   color: var(--clr-darksage);
   background-color: #364237;
+}
+
+h2 {
+  direction: rtl;
+  flex-wrap: wrap;
+  color: var(--clr-darkestkhaki);
+  border-right: 3px dashed #364237;
 }
 
 /* main logo & nav */ 
@@ -33,6 +40,13 @@ header {
   align-items: center;
   background-color: var(--clr-darkestkhaki);
   color: var(--clr-lightestsage)
+}
+
+.logo {
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 3px solid rgb(233, 197, 230);
 }
 
 #nav-list {
@@ -51,7 +65,7 @@ a {
 
 /* welcome-banner */
 
-.welcome-banner{
+.welcome-banner {
   display: flex;
   top: 50px;
   background-color: var(--clr-lightestsage);
@@ -59,31 +73,39 @@ a {
   height: 35vh;
   justify-content: flex-start;
   align-items: center;
+  position: static;
+  margin-bottom: -50px;
 }
 
 h1 {
   color: var(--clr-darkestkhaki)
 }
 
-.my-image {
+#my-image {
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  margin: 50px;
+  margin-left: 23px;
 }
 
 .welcome-text {
   width: 100%;
+  margin-left: 15px;
 }
 
 /* main section */
 
 /* H2 style */
 .headings {
-  margin-left: 5px;
+  direction: rtl;
+  flex-wrap: wrap;
   color: var(--clr-darkestkhaki);
   border-right: 3px dashed #364237;
   width: 20%;
+  font-size: 30px;
+  align-items: stretch;
+  height: auto;
+  padding-right: 5px;
 }
 
 /* about me section */
@@ -94,9 +116,20 @@ h1 {
 .about-me-container {
   display: flex;
   width: auto;
-  height: 130px;
+  height:100%;
   top: 360px;
   background-color: var(--clr-lightsage);
+}
+
+.a-me {
+  direction: rtl;
+  flex-wrap: wrap;
+  color: var(--clr-darkestkhaki);
+  border-right: 3px dashed #364237;
+  width: 20%;
+  font-size: 30px;
+  align-items: stretch;
+  height: auto;
 }
 
 .description {
@@ -109,6 +142,8 @@ h1 {
 #my-portfolio {
   background-color: var(--clr-darksage);
   display: flex;
+  padding: 0px;
+  border: 3px solid var(--clr-lightestsage);
 }
 
 #projects-container {
@@ -126,6 +161,7 @@ h1 {
   height: 150px;
   justify-content: center;
   align-items: center;
+  border-radius: 5px var(--clr-darkestkhaki);
 }
 
 #img-1 {
@@ -141,11 +177,14 @@ h1 {
   align-items: center;
   width: 50%;
   height: 100px;
+  border-top: 3px solid var(--clr-lightestsage);
 }
 
 .project-images {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: -15px;
   height: 50px;
   width: 50px;
 }
@@ -157,12 +196,14 @@ h1 {
   justify-content: center;
   align-items: flex-end;
   width: 98%;
+  border: 3px solid rgb(233, 197, 230);
 }
 
 /* footer & contact me section */
 #contact-me {
   background-color: var(--clr-lightsage);
   display: flex;
+  height: auto;
 }
 
 .footer-nav {
@@ -184,10 +225,97 @@ h1 {
 }
 
 .f-text {
-  color: var(--clr-darkestkhaki);
+  color: var(--clr-lightestsage);
+  background-color: var(--clr-darkestkhaki);
+  justify-content: center;
+  border: 3px solid rgb(233, 197, 230);
+  width: 150%;
+  display: flex;
   justify-content: center;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    position: fixed;
+  }
+
+  .headings {
+    word-wrap: break-word;
+    font-size: large;
+  }
+
+  #nav-list {
+    font-size: medium;
+    word-wrap: break-word;
+  }
+
+  p.description {
+    word-wrap: break-word;
+    margin-right: 3px;
+  }
+
+  .logo {
+    padding: 0%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    position: fixed;
+  }
+
+  .headings {
+    word-wrap: break-word;
+    font-size: medium;
+  }
+
+  #nav-list {
+    font-size: smaller;
+  }
+
+  .logo {
+    padding: 0%;
+    font-size: 1rem;
+  }
+
+  #my-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    position: fixed;
+  }
+
+  .headings {
+    word-wrap: break-word;
+    font-size: medium;
+  }
+
+  #nav-list {
+    font-size: smaller;
+    word-wrap: break-word;
+  }
+
+  .logo {
+    padding: 0%;
+    font-size: 1rem;
+  }
+
+  #my-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+   
+  }
 }
