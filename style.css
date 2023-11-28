@@ -142,6 +142,7 @@ h1 {
 .description {
   margin: 10px;
   width: 80%;
+  margin-top: 0px;
 }
 
 /* portfolio section */
