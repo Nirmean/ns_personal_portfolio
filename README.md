@@ -13,9 +13,6 @@ Live URL: file:///Users/nirmean/bootcamp/personal_portfolio/ns.portfolio.html
 - My Portfolio
 - Contact Details and professional social media sites
 
-<h2>Features</h2>
-- Direct links to web
-
 <h2>Tools and Resources Used</h2>
 
 - Project Icons from icons8: https://icons8.com/icons/set/project
