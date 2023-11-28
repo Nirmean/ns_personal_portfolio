@@ -5,7 +5,7 @@ Here you'll find information about me, a showcase of my projects, and how to get
 
 Live URL: file:///Users/nirmean/bootcamp/personal_portfolio/ns.portfolio.html
 
-![Snapshot image of the site] <img width="497" alt="Screenshot 2023-11-28 at 22 18 19" src="https://github.com/Nirmean/ns_personal_portfolio/assets/149950638/2931d2b8-6187-4905-a1ba-6fc7c4d3d52e">
+<img width="497" alt="Screenshot 2023-11-28 at 22 18 19" src="https://github.com/Nirmean/ns_personal_portfolio/assets/149950638/2931d2b8-6187-4905-a1ba-6fc7c4d3d52e" ![Snapshot image of the site]>
 
 <h2>Sections</h2>
 
